@@ -1,39 +1,21 @@
 import React from 'react';
 import './App.css';
+import Status from './components/Status';
+import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 import Greet from './components/Greet';
-import Person from './components/Person';
-import PersonList from './components/PersonList';
 
 function App() {
-	const personName = {
-		firstName: 'Emilia',
-		lastName: 'Kożuch',
-	};
-
-	const personsArr = [
-		{
-			first: 'Bruce',
-			last: 'Wayne',
-		},
-		{
-			first: 'Clark',
-			last: 'Kent',
-		},
-		{
-			first: 'Princess',
-			last: 'Diana',
-		},
-	];
-
 	return (
 		<div className='App'>
+			<Status status='success' />
+			<Oscar>
+				<Heading>Oscar goes to Leonardo Dicaprio!</Heading>
+			</Oscar>
 			<Greet
 				name='Emilia'
-				messageCount={20}
 				isLoggedIn={false}
 			/>
-			<Person name={personName} />
-			<PersonList persons={personsArr} />
 		</div>
 	);
 }
