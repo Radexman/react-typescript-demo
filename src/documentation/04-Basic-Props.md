@@ -60,6 +60,8 @@ const App = () => {
 		/>
 	);
 };
+
+export default App;
 ```
 
 TypeScrip will warn us if any prop that we declared in component's prop types is missing in the component.
@@ -103,6 +105,9 @@ const App = () => {
         <Person name={personName}/>
 	);
 };
+
+export default App;
+
 ```
 
 This example shows how we type an object prop in TypeScript. Next we will explore array of objects,
@@ -165,4 +170,7 @@ const App = () => {
         <PersonList list={nameList}/>
 	);
 };
+
+export default App;
+
 ```

@@ -32,6 +32,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 ## **Change Event**
@@ -73,6 +75,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 This approach works fine but if we want we can add this typing inside component as well but it's less reusable.

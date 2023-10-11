@@ -44,6 +44,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 This approach helps us prevent case of passing in wrong string to the componenet.
@@ -75,6 +77,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 ## **Children Component Prop**
@@ -111,6 +115,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 ## **Default & Optional Props**
@@ -157,6 +163,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 Now if we don't provide messageCount prop React will assume form the default param that it should be 0.

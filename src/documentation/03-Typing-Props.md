@@ -17,7 +17,7 @@ This component needs to be imported and included in the App.tsx as well as all t
 components that we will create.
 
 ```tsx
-// App.tsc
+// App.tsx
 import './App.css';
 import { Greet } from './components/Greet';
 
@@ -28,6 +28,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 We will explore some basic prop types when working in TypeScript and how to use them.
@@ -52,7 +54,7 @@ const Greet = (props: GreetProps) = > {
 Now we can sent the prop from the component.
 
 ```tsx
-// App.tsc
+// App.tsx
 import './App.css';
 import { Greet } from './components/Greet';
 
@@ -63,6 +65,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 This solution may seem to be much more time consuming but whis approach actually gives us more type sefety
