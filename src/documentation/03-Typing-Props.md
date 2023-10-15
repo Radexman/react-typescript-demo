@@ -69,9 +69,9 @@ const App = () => {
 export default App;
 ```
 
-This solution may seem to be much more time consuming but whis approach actually gives us more type sefety
+This solution may seem to be much more time consuming but this approach actually gives us more type sefety
 and neat intelliseanse when working with props. This makes our core less error prone in the long run.
-Also when nivoking data in the component we will get errors if we will pass wrong data type to the component.
+Also when invoking data in the component we will get errors if we will pass wrong data type to the component.
 
 ## **Types or Interfaces**
 
