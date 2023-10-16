@@ -1,8 +1,17 @@
 import { useReducer } from 'react';
 
+type CounterState = {
+	count: number;
+};
+
+type CounterAction = {
+	type: string;
+	payload: number;
+};
+
 const initialState = { count: 0 };
 
-const reducer = (state, action) => {
+const reducer = (state: CounterState, action: CounterAction) => {
 	switch (action.type) {
 		case 'increment':
 			return { count: state.count + action.payload };
@@ -14,7 +23,7 @@ const reducer = (state, action) => {
 };
 
 const Counter = () => {
-	const [state, dispatch] = useReducer(initialState, reducer);
+	const [state, dispatch] = useReducer(reducer, initialState);
 
 	return (
 		<>
