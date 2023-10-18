@@ -1,10 +1,9 @@
 import './App.css';
-import Container from './components/props/Container';
-
+import Counter from './components/hooks/Counter';
 function App() {
 	return (
 		<div className='App'>
-			<Container styles={{ border: '1px solid black', padding: '1rem', borderRadius: '.7em' }} />
+			<Counter />
 		</div>
 	);
 }
