@@ -4,11 +4,16 @@ type StateType = {
 	count: number;
 };
 
-type ActionType = {
-	type: string;
+type UpdateAction = {
+	type: 'increment' | 'decrement';
 	payload: number;
 };
 
+type ResetAction = {
+	type: 'reset';
+};
+
+type ActionType = UpdateAction | ResetAction;
 const initialState = {
 	count: 0,
 };
@@ -19,6 +24,8 @@ const reducer = (state: StateType, action: ActionType) => {
 			return { count: state.count + action.payload };
 		case 'decrement':
 			return { count: state.count - action.payload };
+		case 'reset':
+			return initialState;
 		default:
 			return state;
 	}
@@ -35,11 +42,16 @@ const Counter = () => {
 		dispatch({ type: 'decrement', payload: 1 });
 	};
 
+	const reset = () => {
+		dispatch({ type: 'reset' });
+	};
+
 	return (
 		<div>
 			<p>{state.count}</p>
 			<button onClick={increment}>Increment</button>
 			<button onClick={decrement}>Decrement</button>
+			<button onClick={reset}>Reset</button>
 		</div>
 	);
 };
