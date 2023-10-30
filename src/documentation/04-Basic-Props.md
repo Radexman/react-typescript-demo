@@ -64,7 +64,7 @@ const App = () => {
 export default App;
 ```
 
-TypeScrip will warn us if any prop that we declared in component's prop types is missing in the component.
+TypeScript will warn us if any prop that we declared in component's prop types is missing in the component.
 Now that we have covered basic primitive types let's learn how to type reference types like objects and arrays.
 
 ```tsx
