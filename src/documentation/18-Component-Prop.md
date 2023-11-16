@@ -51,6 +51,8 @@ const App = () => {
 		</div>
 	);
 };
+
+export default App;
 ```
 
 All we need to do is to import ComponentType from react and add this type to the prop types. If the component itself has a prop we will need to import its prop types and add this to the angle brackets and job's done.
